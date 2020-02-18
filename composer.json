@@ -1,0 +1,32 @@
+{
+    "name": "dhanangpratama/laravel-zodiac",
+    "description": "Package to find zodiac from birth date",
+    "type": "library",
+    "version": "1.0.0-stable",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "authors": [
+        {
+            "name": "Dhanang Pratama",
+            "email": "dhanangarfian@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "DhanangPratama\\Zodiac\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DhanangPratama\\Zodiac\\Providers\\ZodiacServiceProvider"
+            ],
+            "aliases": {
+                "Zodiac": "DhanangPratama\\Zodiac\\Facades\\Zodiac"
+            }
+        }
+    }
+}
